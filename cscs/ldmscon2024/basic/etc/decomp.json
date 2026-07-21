@@ -1,0 +1,80 @@
+{
+  "type" : "flex",
+  "decomposition" : {
+     "meminfo_decomp" : {
+       "type" : "static",
+       "rows" : [
+          {
+            "schema" : "meminfo",
+            "cols" : [
+              { "src" : "timestamp", "dst" : "timestamp", "type" : "ts" },
+              { "src" : "producer", "dst":"hostname", "type":"char_array", "array_len":128 },
+              { "src" : "instance", "dst":"instance", "type":"char_array", "array_len":128 },
+              { "src" : "component_id", "dst" : "component_id", "type" : "u64" },
+              { "src" : "job_id", "dst" : "job_id", "type" : "u64" },
+              { "src" : "app_id", "dst" : "app_id", "type" : "u64" },
+              { "src" : "MemTotal", "dst" : "MemTotal", "type" : "u64" },
+              { "src" : "MemFree", "dst" : "MemFree", "type" : "u64" },
+              { "src" : "MemAvailable", "dst" : "MemAvailable", "type" : "u64" },
+              { "src" : "Buffers", "dst" : "Buffers", "type" : "u64" },
+              { "src" : "Cached", "dst" : "Cached", "type" : "u64" },
+              { "src" : "SwapCached", "dst" : "SwapCached", "type" : "u64" },
+              { "src" : "Active", "dst" : "Active", "type" : "u64" },
+              { "src" : "Inactive", "dst" : "Inactive", "type" : "u64" },
+              { "src" : "Active(anon)", "dst" : "Active(anon)", "type" : "u64" },
+              { "src" : "Inactive(anon)", "dst" : "Inactive(anon)", "type" : "u64" },
+              { "src" : "Active(file)", "dst" : "Active(file)", "type" : "u64" },
+              { "src" : "Inactive(file)", "dst" : "Inactive(file)", "type" : "u64" },
+              { "src" : "Unevictable", "dst" : "Unevictable", "type" : "u64" },
+              { "src" : "Mlocked", "dst" : "Mlocked", "type" : "u64" },
+              { "src" : "SwapTotal", "dst" : "SwapTotal", "type" : "u64" },
+              { "src" : "SwapFree", "dst" : "SwapFree", "type" : "u64" },
+              { "src" : "Dirty", "dst" : "Dirty", "type" : "u64" },
+              { "src" : "Writeback", "dst" : "Writeback", "type" : "u64" },
+              { "src" : "AnonPages", "dst" : "AnonPages", "type" : "u64" },
+              { "src" : "Mapped", "dst" : "Mapped", "type" : "u64" },
+              { "src" : "Shmem", "dst" : "Shmem", "type" : "u64" },
+              { "src" : "KReclaimable", "dst" : "KReclaimable", "type" : "u64" },
+              { "src" : "Slab", "dst" : "Slab", "type" : "u64" },
+              { "src" : "SReclaimable", "dst" : "SReclaimable", "type" : "u64" },
+              { "src" : "SUnreclaim", "dst" : "SUnreclaim", "type" : "u64" },
+              { "src" : "KernelStack", "dst" : "KernelStack", "type" : "u64" },
+              { "src" : "PageTables", "dst" : "PageTables", "type" : "u64" },
+              { "src" : "NFS_Unstable", "dst" : "NFS_Unstable", "type" : "u64" },
+              { "src" : "Bounce", "dst" : "Bounce", "type" : "u64" },
+              { "src" : "WritebackTmp", "dst" : "WritebackTmp", "type" : "u64" },
+              { "src" : "CommitLimit", "dst" : "CommitLimit", "type" : "u64" },
+              { "src" : "Committed_AS", "dst" : "Committed_AS", "type" : "u64" },
+              { "src" : "VmallocTotal", "dst" : "VmallocTotal", "type" : "u64" },
+              { "src" : "VmallocUsed", "dst" : "VmallocUsed", "type" : "u64" },
+              { "src" : "VmallocChunk", "dst" : "VmallocChunk", "type" : "u64" },
+              { "src" : "Percpu", "dst" : "Percpu", "type" : "u64" },
+              { "src" : "HardwareCorrupted", "dst" : "HardwareCorrupted", "type" : "u64" },
+              { "src" : "AnonHugePages", "dst" : "AnonHugePages", "type" : "u64" },
+              { "src" : "ShmemHugePages", "dst" : "ShmemHugePages", "type" : "u64" },
+              { "src" : "ShmemPmdMapped", "dst" : "ShmemPmdMapped", "type" : "u64" },
+              { "src" : "FileHugePages", "dst" : "FileHugePages", "type" : "u64" },
+              { "src" : "FilePmdMapped", "dst" : "FilePmdMapped", "type" : "u64" },
+              { "src" : "CmaTotal", "dst" : "CmaTotal", "type" : "u64" },
+              { "src" : "CmaFree", "dst" : "CmaFree", "type" : "u64" },
+              { "src" : "Unaccepted", "dst" : "Unaccepted", "type" : "u64" },
+              { "src" : "HugePages_Total", "dst" : "HugePages_Total", "type" : "u64" },
+              { "src" : "HugePages_Free", "dst" : "HugePages_Free", "type" : "u64" },
+              { "src" : "HugePages_Rsvd", "dst" : "HugePages_Rsvd", "type" : "u64" },
+              { "src" : "HugePages_Surp", "dst" : "HugePages_Surp", "type" : "u64" },
+              { "src" : "Hugepagesize", "dst" : "Hugepagesize", "type" : "u64" },
+              { "src" : "Hugetlb", "dst" : "Hugetlb", "type" : "u64" },
+              { "src" : "DirectMap4k", "dst" : "DirectMap4k", "type" : "u64" },
+              { "src" : "DirectMap2M", "dst" : "DirectMap2M", "type" : "u64" },
+              { "src" : "DirectMap1G", "dst" : "DirectMap1G", "type" : "u64" }
+            ],
+            "indices" : [
+            ]
+         }
+      ]
+    }
+  },
+  "digest" : {
+    "*" : "meminfo_decomp"
+  }
+}
