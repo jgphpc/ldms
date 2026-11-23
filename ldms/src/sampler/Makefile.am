@@ -94,6 +94,10 @@ if ENABLE_CORETEMP
 SUBDIRS += coretemp
 endif
 
+if ENABLE_THERMAL_ZONES
+SUBDIRS += thermal_zones
+endif
+
 if ENABLE_CLOCK
 SUBDIRS += clock
 endif

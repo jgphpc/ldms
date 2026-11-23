@@ -331,6 +331,7 @@ OPTION_DEFAULT_ENABLE([file_importer], [ENABLE_FILE_IMPORTER])
 OPTION_DEFAULT_ENABLE([cxi_sampler], [ENABLE_CXI_SAMPLER])
 OPTION_DEFAULT_ENABLE([curated_metrics], [ENABLE_CURATED_METRICS])
 OPTION_DEFAULT_ENABLE([coretemp], [ENABLE_CORETEMP])
+OPTION_DEFAULT_ENABLE([thermal_zones], [ENABLE_THERMAL_ZONES])
 OPTION_DEFAULT_ENABLE([filesingle], [ENABLE_FILESINGLE])
 OPTION_DEFAULT_DISABLE([msr_interlagos], [ENABLE_MSR_INTERLAGOS])
 OPTION_DEFAULT_ENABLE([array_example], [ENABLE_ARRAY_EXAMPLE])
@@ -1130,6 +1131,7 @@ ldms/src/sampler/procstat2/Makefile
 ldms/src/sampler/loadavg/Makefile
 ldms/src/sampler/vmstat/Makefile
 ldms/src/sampler/coretemp/Makefile
+ldms/src/sampler/thermal_zones/Makefile
 ldms/src/sampler/examples/Makefile
 ldms/src/sampler/examples/array_example/Makefile
 ldms/src/sampler/examples/synthetic/Makefile
